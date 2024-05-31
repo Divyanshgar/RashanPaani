@@ -16,18 +16,27 @@ function App() {
     <Router>
       <Navbar/>
       <Sidebar/>
-      <Routes>
-        <Route path='/'  element={<Home />} />
-        <Route path='about'  element={<About />} />
-        <Route path='cart'  element={<Cart />} />
-        <Route path='products'  element={<Products />} />
-        <Route path='products/:id'  element={<Products />} />
-        <Route path='checkout'  element={
-               <PrivateRoute>
-                <Checkout />
-               </PrivateRoute>} />
-        <Route path='*'  element={<Error />} />
-      </Routes>
+      <Switch>
+        <Route exact path='/'>
+          <Home /> 
+        </Route>
+        <Route exact path='/about'>
+          <About /> 
+        </Route>  
+        <Route exact path='/cart'>
+          <Cart /> 
+        </Route>  
+        <Route exact path='/products'>
+          <Products /> 
+        </Route>  
+        <Route exact path='/products/:id' children={<SingleProduct />}/>
+        <Route exact path='/checkout'>
+          <Checkout/>
+        </Route>
+        <Route path='*'>
+          <Error/>
+        </Route>
+      </Switch>
       <Footer/>
     </Router>
   )
