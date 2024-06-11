@@ -100,5 +100,10 @@ const SidebarContainer = styled.div`
     .cart-btn-wrapper {
         margin: 2rem auto;
     }
+    @media screen and (min-width: 992px) {
+        .sidebar {
+            display: none;
+        }
+    }
 `
 export default Sidebar

@@ -39,6 +39,14 @@ const Wrapper = styled.section`
     }
     .btn {
         display: block;
+        width: 148px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    @media (min-width: 576px) {
+        .featured {
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+        }
     }
 `
 

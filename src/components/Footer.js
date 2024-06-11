@@ -29,6 +29,9 @@ const Wrapper = styled.footer`
         text-transform: none;
         line-height: 1.25;
     }
+    @media (min-width: 776p) {
+        flex-direction: row;
+    }
 `
 
 export default Footer
