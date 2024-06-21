@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'react-components'
+import styled from 'styled-components'
 import { PageHero } from '../components'
 import aboutImg from '../assets/hero-bcg.jpeg'
 
@@ -14,10 +14,9 @@ const AboutPage = () => {
                     <div className='underline'></div>
                 </div>
                 <p>
-                    sadkhgvns adlvmo atljvntasldf aljv nadsvn rinvqwdfn 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, dignissimos officia! Culpa quasi minima fugiat porro ipsa dolor pariatur quod, voluptate voluptatem inventore officia quisquam consectetur aliquam voluptatibus architecto eveniet optio vero. Laudantium rerum fuga magni excepturi, adipisci placeat optio dolorem velit ad laborum alias officia possimus incidunt perferendis harum!
                 </p>
             </article>
-
         </Wrapper>
     </main>)
 }

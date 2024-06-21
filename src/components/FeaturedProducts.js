@@ -2,9 +2,9 @@ import React from 'react'
 import { useProductsContext } from '../context/products_context'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import Error from '../Error'
-import Loading from '../Loading'
-import Product from '../Product'
+import Error from './Error'
+import Loading from './Loading'
+import Product from './Product'
 
 const FeaturedProducts = () => {
     const {products_loading: loading, products_error:error, featured_products:featured} = useProductsContext();
@@ -24,6 +24,9 @@ const FeaturedProducts = () => {
                 return <Product key={product.id} {...product} />
             })}
         </div>
+        <Link to='/products' className='btn'>
+            all products
+        </Link>
     </Wrapper>
 }
 

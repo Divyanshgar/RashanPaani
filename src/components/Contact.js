@@ -9,7 +9,7 @@ const Contact = () => {
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis et similique omnis assumenda veritatis minima cupiditate, corrupti dolor ipsam ut.
                 </p>
-                <form className='contact-form' action="https://formspree.io/f/xvoenqqp" method="POST">
+                <form className='contact-form'>
                     <input 
                     type="email" 
                     className='form-input'

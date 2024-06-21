@@ -6,14 +6,14 @@ const Stars = ({ stars, reviews }) => {
     const tempstars = Array.from({ length:5}, (_, index) => {
         const number = index + 0.5
         return (
-            <span>
-                {stars >= index + 1 ? <BsStarFill /> : stars >= number ? <BsStarHalf /> : <BsStar />}
+            <span key={index}>
+                {stars >= number ? <BsStarFill /> : stars >= index ? <BsStarHalf /> : <BsStar />}
             </span>
         )
     })
     return <Wrapper>
         <div className="stars">{tempstars}</div>
-        <p className="reviews">({reviews} reviews)</p>
+        <p className="reviews">({reviews} customer reviews)</p>
     </Wrapper>
 }
 
