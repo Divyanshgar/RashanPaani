@@ -22,6 +22,7 @@ const Wrapper = styled.div`
     align-items: center;
     h2 {
         margin-bottom: 0;
+        border: none;
     }
     button {
         background: transparent;
@@ -30,6 +31,7 @@ const Wrapper = styled.div`
         padding: 1rem 0;
         width: 2rem;
         height: 1rem;
+        border: none;
     }
 `
 

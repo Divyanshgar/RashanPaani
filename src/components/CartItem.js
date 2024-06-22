@@ -99,6 +99,7 @@ const Wrapper = styled.article`
         h2 {
             font-size: 1rem;
         }
+        border: none;
     }
     .remove-btn {
         color: var(--clr-white);

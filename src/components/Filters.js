@@ -35,7 +35,7 @@ const Filters = () => {
                         <div>
                             {categories.map((c, index) => {
                                 return (
-                                <button key={index} onClick={updateFilters} type='button' name='category' className={`${ category === c.toLowerCase() ? 'active' : null}`}>
+                                <button value={c} key={index} onClick={updateFilters} type='button' name='category' className={`${ category === c.toLowerCase() ? 'active' : null}`}>
                                     {c}
                                 </button>
                                 )
@@ -66,7 +66,7 @@ const Filters = () => {
                                     )
                                 }
                                 return (
-                                    <button key={index} name='color' style={{ background: c }} className={`${ color === c ? 'color-btn active' : 'color-btn' }`} data-color={c} onClick={updateFilters}>
+                                    <button value={c} key={index} name='color' style={{ background: c }} className={`${ color === c ? 'color-btn active' : 'color-btn' }`} data-color={c} onClick={updateFilters}>
                                         {color === c ? <FaCheck /> : null}
                                     </button>
                                 )

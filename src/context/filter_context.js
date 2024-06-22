@@ -11,6 +11,7 @@ import {
     CLEAR_FILTERS
 } from '../actions'
 import { useProductsContext } from './products_context'
+import { filter } from '../utils/constants'
 
 const initialState = {
     filtered_products: [],
@@ -56,12 +57,9 @@ export const FilterProvider = ({ children }) => {
     }
     const updateFilters = (e) => {
         let name = e.target.name
-        let value = e.target.value
+        let value = name === 'shipping' ? e.target.checked : e.target.value
         switch (name) {
-            case 'category': value = e.target.textContent
-            case 'color': value = e.target.dataset.color
-            case 'price': value = Number(value)
-            case 'shipping': value = e.target.checked
+            case filter: value = value
         }
         dispatch({ type: UPDATE_FILTERS, payload: { name, value } })
     }

@@ -10,9 +10,9 @@ const ProductsPage = () => {
                 <Filters>
                     <div>
                         <Sort/>
-                        <ProductList/>
                     </div>
                 </Filters>
+                <ProductList/>
             </div>
         </Wrapper>
     </main>
